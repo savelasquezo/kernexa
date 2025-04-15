@@ -3224,7 +3224,8 @@ textarea.is-invalid {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0 0;
-  margin: 0 auto;
+  margin: 0 70px;
+  justify-content: flex-start;
 }
 
 @media (max-width: 1199.98px) {
@@ -14087,7 +14088,7 @@ blockquote .blockquote-card_title:before {
 }
 
 .jump {
-  animation: jumpAni 7s linear infinite;
+  animation: jumpAni 45s linear infinite;
 }
 
 @keyframes jumpAni {
