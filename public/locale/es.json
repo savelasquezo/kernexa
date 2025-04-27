@@ -1,0 +1,300 @@
+{
+  "home": {
+    "section1": {
+      "title": {
+        "span": "Una Experiencia",
+        "rest": "De Aprendizaje Exclusiva Para Negocios"
+      },
+      "subtitle": "Descubre beneficios flexibles que se adaptan a tu vida en casa y te llevan por todo el mundo. Aplican términos del plan.",
+      "cta": "Solicitar una Cita"
+    },
+    "section2": {
+      "subtitle": "Características Únicas",
+      "title": "Tres Facilidades Exclusivas",
+      "cards": {
+        "1": {
+          "title": "Soluciones Basadas en Datos",
+          "text": "Sociis enim porta suspendisse rhoncus etiam luctus dapibus hendrerit"
+        },
+        "2": {
+          "title": "Gran Crecimiento Empresarial",
+          "text": "Sociis enim porta suspendisse rhoncus etiam luctus dapibus hendrerit"
+        },
+        "3": {
+          "title": "Alianza Colaborativa",
+          "text": "Sociis enim porta suspendisse rhoncus etiam luctus dapibus hendrerit"
+        },
+        "cta": "Ver Más"
+      }
+    },
+    "section3": {
+      "subtitle": "Sobre Nuestra Empresa",
+      "title": "Inspirando el Éxito con Soluciones Innovadoras",
+      "description": "Netus senectus neque primis cum fermentum hac dictum luctus leo faucibus bibendum sem conubia sodales vitae eros orci, platea porttitor scelerisque nec dis mollis venenatis quam.",
+      "features": {
+        "0": {
+          "title": "Calidad y Excelencia",
+          "text": "Envíos regulares de 30 días"
+        },
+        "1": {
+          "title": "Innovación y Crecimiento",
+          "text": "Envíos rápidos en 24 horas"
+        }
+      },
+      "cta": "Solicita una Consulta",
+      "callText": "Llámanos 24/7",
+      "phone": "+236-3256.21456"
+    },
+    "section4": {
+      "subtitle": "Sobre Nuestra Empresa",
+      "title": "Brindamos Apoyo Logístico 100% Confiable",
+      "description": "Los servicios de consultoría empresarial se enfocan en identificar desafíos dentro de una organización y ofrecer soluciones a medida. Esto incluye áreas como posicionamiento en el mercado, planificación financiera y eficiencia operativa...",
+      "successLabel": "Historias de Éxito",
+      "features": {
+        "0": {
+          "title": "Servicio Global Empresarial",
+          "text": "Los servicios de consultoría empresarial se enfocan en identificar desafíos dentro de una organización y ofrecer soluciones a medida."
+        },
+        "1": {
+          "title": "Servicio Global Empresarial",
+          "text": "Los servicios de consultoría empresarial se enfocan en identificar desafíos dentro de una organización y ofrecer soluciones a medida."
+        }
+      }
+    },
+    "section5": {
+      "subtitle": "Ver Video de la Empresa",
+      "title": "Valom es tu plataforma integral de recursos humanos",
+      "description": "Simplificamos la gestión de RRHH y nómina automatizando tareas rutinarias, protegiendo los datos de los empleados y ofreciendo análisis detallados.",
+      "videoButton": "Ver Nuestro Video",
+      "videoText": "Ver Video"
+    },
+    "section6": {
+      "subtitle": "Usado por miles de compañías en todo el mundo"
+    },
+    "section7": {
+      "subtitle": "Actualizaciones de Noticias",
+      "title": "Últimas Publicaciones del Blog",
+      "readMore": "LEER MÁS",
+      "posts": [
+        {
+          "title": "Entregando lo que realmente valoran los consumidores",
+          "description": "Navega desafíos, aprovecha oportunidades y abraza el crecimiento con una visión estratégica adaptada a tus necesidades."
+        },
+        {
+          "title": "Guía para prácticas empresariales sostenibles",
+          "description": "Navega desafíos, aprovecha oportunidades y abraza el crecimiento con una visión estratégica adaptada a tus necesidades."
+        },
+        {
+          "title": "El camino con orientación de consultoría empresarial",
+          "description": "Navega desafíos, aprovecha oportunidades y abraza el crecimiento con una visión estratégica adaptada a tus necesidades."
+        }
+      ]
+    }
+  },
+  "header": {
+    "workingHours": "Horario",
+    "navbar": {
+      "home": "Inicio",
+      "about": "¿Quienes somos?",
+      "services": "Servicios",
+      "blog": "Blog",
+      "cta": "Contactar"
+    }
+  },
+  "bread": {
+    "title": "Home"
+  },
+  "footer": {
+    "joinTitle": "Join Valom and Get a Special Discount",
+    "writeExperience": "WRITE YOUR EXPERIENCE",
+    "aboutText": "Felis consquat magnis fames sagittis ultrices plasodales porttitor quisque ultrice tempor turpis.",
+    "quickLinks": "Quick Links",
+    "about": "About Us",
+    "services": "Services",
+    "appointment": "Appointment",
+    "blog": "Blog",
+    "officeInfo": "Office Information",
+    "callUs": "Call Us 24/7",
+    "workWithUs": "Work with us",
+    "location": "Our Location",
+    "instagram": "Instagram Posts",
+    "rights": "Copyright 2025. All rights reserved."
+  },
+  "pages": {
+    "about": {
+      "breadcrumbTitle": "About Us",
+      "aboutSubtitle": "About Amazing Company",
+      "aboutTitle": "We’re Trusted Professional Consultancy Company",
+      "aboutParagraph": "The business consultancy company stands as a stalwart beacon of guidance and innovation, offering a multifaceted array of services tailored to propel enterprises toward their zenith. At its core, this entity operates as a bastion of strategic insight, employing a cadre of seasoned professionals.",
+      "checklist": {
+        "item1": "Remain flexible and adaptive to swiftly respond to changing market dynamics and client needs.",
+        "item2": "Empower clients through knowledge transfer, skill-building, and fostering a culture of self-sufficiency.",
+        "item3": "Facilitate a culture of ongoing learning and refinement to ensure sustained success and growth."
+      },
+      "ctaText": "Call to ask any question",
+      "buttonAppointment": "Make An Appointment",
+      "buttonServices": "View Our Services",
+      "counter": {
+        "experience": {
+          "subtitle": "Years Of Experience",
+          "text": "Central to the consultancy's modus operandi is a commitment..."
+        },
+        "projects": {
+          "subtitle": "Official Project Completed",
+          "text": "Central to the consultancy's modus operandi is a commitment..."
+        },
+        "team": {
+          "subtitle": "In-House Team Members",
+          "text": "Central to the consultancy's modus operandi is a commitment..."
+        }
+      },
+      "goal": {
+        "subtitle": "OUR Business GOAL",
+        "title": "Make Every Stage in The Customer Journey",
+        "card1": {
+          "title": "Strategy Development",
+          "text": "Efficiently unleash cross-media information without cross-media value work."
+        },
+        "card2": {
+          "title": "Data-Driven Insights",
+          "text": "Efficiently unleash cross-media information without cross-media value work."
+        }
+      },
+      "faq": {
+        "subtitle": "frequently asked questions",
+        "title": "Get every business answer from us",
+        "question1": {
+          "title": "What should i included my personal details?",
+          "answer": "Partrient sed nascetur facilisis suscipit ridiculus magna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service visionary sources unleash online"
+        },
+        "question2": {
+          "title": "Where i can find my business growth result?",
+          "answer": "Partrient sed nascetur facilisis suscipit ridiculus magna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service visionary sources unleash online"
+        },
+        "question3": {
+          "title": "Did you get any business consultant?",
+          "answer": "Partrient sed nascetur facilisis suscipit ridiculus magna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service visionary sources unleash online"
+        },
+        "question4": {
+          "title": "Do you need any business invesment policy?",
+          "answer": "Partrient sed nascetur facilisis suscipit ridiculus magna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service visionary sources unleash online"
+        }
+      }
+    },
+    "appointment": {
+      "breadcrumbTitle": "Make Appointment",
+      "formTitle": "Make An Appointment",
+      "placeholderName": "Your Name",
+      "placeholderEmail": "Email Address",
+      "selectService": "Select Service",
+      "serviceBusiness": "Business",
+      "serviceManagement": "Management",
+      "serviceAnalysis": "Analysis",
+      "placeholderDate": "Select Date",
+      "placeholderTime": "Select Time",
+      "submitText": "Submit Message"
+    },
+    "blog": {
+      "breadcrumb": "Blog",
+      "postDate": {
+        "day": "15",
+        "month": "JAN"
+      },
+      "author": "by Smith",
+      "category": "Business",
+      "postTitle": "5 Key Indicators of Financial Health Every Business",
+      "postDescription": "Navigate challenges, seize opportunities, and embrace growth with strategic insight tailored to your unique needs.",
+      "readDetails": "Read Details"
+    },
+    "service": {
+      "breadcrumbTitle": "Services",
+      "serviceArea": {
+        "subtitle": "News Updates",
+        "title": "Latest Blog Posts",
+        "cards": {
+          "card1": {
+            "title": "Strategic Planning and Execution",
+            "text": "Global business landscape continues to evolve at an unprecedented pace, the role of the consultancy company..."
+          },
+          "card2": {
+            "title": "Financial Management and Advisory",
+            "text": "Global business landscape continues to evolve at an unprecedented pace, the role of the consultancy company..."
+          },
+          "card3": {
+            "title": "Market Research and Analysis Advance",
+            "text": "Global business landscape continues to evolve at an unprecedented pace, the role of the consultancy company..."
+          }
+        },
+        "button": "Read More Details"
+      },
+      "ctaArea": {
+        "subtitle": "About Amazing Company",
+        "title": "Do You Have Similar Service Requirements?",
+        "button": "Contact With Us"
+      },
+      "pricingArea": {
+        "subtitle": "Watch Company Video",
+        "title": "Valom is your all-in-one human resources platform",
+        "text": "Simplifying HR and payroll management by automating routine tasks, securing employee data, and providing insightful analytics.",
+        "plans": {
+          "plan1": {
+            "title": "Essential Plan",
+            "text": "Perfect for startups or small businesses looking to set a strong foundation.",
+            "features": {
+              "feature1": "Business initial assessment check",
+              "feature2": "Customized strategic roadmap",
+              "feature3": "Monthly consultation (4 hours/month)",
+              "feature4": "Access to basic resources"
+            }
+          },
+          "plan2": {
+            "title": "Growth Plan",
+            "text": "Perfect for startups or small businesses looking to set a strong foundation.",
+            "features": {
+              "feature1": "Business initial assessment check",
+              "feature2": "Customized strategic roadmap",
+              "feature3": "Monthly consultation (4 hours/month)",
+              "feature4": "Access to basic resources"
+            }
+          },
+          "plan3": {
+            "title": "Enterprise Plan",
+            "text": "Perfect for startups or small businesses looking to set a strong foundation.",
+            "features": {
+              "feature1": "Business initial assessment check",
+              "feature2": "Customized strategic roadmap",
+              "feature3": "Monthly consultation (4 hours/month)",
+              "feature4": "Access to basic resources"
+            }
+          }
+        },
+        "purchaseButton": "Purchase Plan"
+      },
+      "aboutArea": {
+        "subtitle": "About Amazing Company",
+        "title": "Business Strategy For Every Stage in Our Every Client’s Journey",
+        "text": "Central to the consultancy's modus operandi is a commitment to innovation, manifested in its agile approach to problem-solving and its relentless pursuit of cutting-edge solutions.",
+        "successCounter": {
+          "text": "Successful Stories"
+        },
+        "cards": {
+          "card1": {
+            "title": "Global Insights",
+            "text": "Central to the consultancy's modus operandi is a commitment to innovation, manifested in its agile approach..."
+          },
+          "card2": {
+            "title": "Business Investment",
+            "text": "Central to the consultancy's modus operandi is a commitment to innovation, manifested in its agile approach..."
+          }
+        },
+        "appointmentButton": "Book Appointment Now"
+      }
+    }
+  },
+  "error": {
+    "not-found": {
+      "description": "Oops! Nothing Was Found",
+      "button": "Back To Homepage"
+    }
+  }
+}

@@ -4,7 +4,6 @@ import { useEffect } from 'react'
 export function dataBg() {
 	useEffect(() => {
 		const elements = document.querySelectorAll<HTMLElement>('[data-background]')
-
 		elements.forEach((element) => {
 			const bgUrl = element.getAttribute('data-background')
 			if (bgUrl) {

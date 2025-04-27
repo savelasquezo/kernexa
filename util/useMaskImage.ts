@@ -5,7 +5,7 @@ const useMaskImage = () => {
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			document.querySelectorAll('[data-mask-src]').forEach((el) => {
-				const element = el as HTMLElement // Ensure it's an HTMLElement
+				const element = el as HTMLElement
 				const mask = element.getAttribute('data-mask-src')
 				if (mask) {
 					element.style.maskImage = `url(${mask})`

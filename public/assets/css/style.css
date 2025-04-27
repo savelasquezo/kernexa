@@ -732,7 +732,6 @@ textarea {
   height: 200%;
   top: 110%;
   left: 50%;
-  background: var(--tg-heading-color);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -14342,4 +14341,8 @@ blockquote .blockquote-card_title:before {
   width: 100%;
   height: 100%;
   overflow: hidden !important;
+}
+
+.i18next{
+  background-color: wheat;
 }

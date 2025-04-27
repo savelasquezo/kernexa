@@ -1,13 +1,11 @@
 "use client"
-
 import { Collapse, Tab } from "bootstrap"
 import type { FC } from "react"
 import { useEffect } from "react"
 
-// Define props interface (empty in this case since no props are used)
 interface BootstrapComponentsProps { }
 
-// Type the component as a Functional Component (FC)
+
 const BootstrapComponents: FC<BootstrapComponentsProps> = () => {
 	useEffect(() => {
 		if (typeof window !== "undefined" && typeof document !== "undefined") {
@@ -23,7 +21,6 @@ const BootstrapComponents: FC<BootstrapComponentsProps> = () => {
 			const tabTriggerList = document.querySelectorAll('[data-bs-toggle="tab"], [data-bs-toggle="pill"]')
 			tabTriggerList.forEach((tabTriggerEl) => new Tab(tabTriggerEl))
 
-			// Type accordionHeaders as NodeListOf<HTMLElement>
 			const accordionHeaders = document.querySelectorAll<HTMLElement>('[data-bs-toggle="collapse"]')
 			accordionHeaders.forEach((header) => {
 				const handleClick = () => {
@@ -38,7 +35,6 @@ const BootstrapComponents: FC<BootstrapComponentsProps> = () => {
 				}
 
 				header.addEventListener("click", handleClick)
-				// Now TypeScript knows header is an HTMLElement, so dataset is valid
 				header.dataset.handleClick = handleClick.toString()
 			})
 

@@ -1,16 +1,13 @@
 "use client"
-
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useEffect } from "react"
 
-// Correct SplitText type definition
 type SplitTextType = {
 	new(element: Element, options: { type: string }): { chars: Element[] }
 }
 
 let SplitText: SplitTextType | null = null
-
 export default function useTextAnimation() {
 	useEffect(() => {
 		if (typeof window === "undefined") return
@@ -22,7 +19,7 @@ export default function useTextAnimation() {
 				const gsapAll = await import("gsap/all")
 				SplitText = gsapAll.SplitText as SplitTextType
 				if (SplitText) {
-					gsap.registerPlugin(SplitText) // Register only if SplitText is not null
+					gsap.registerPlugin(SplitText)
 				}
 			} catch (error) {
 				console.warn("SplitText not available. Using fallback.")
@@ -30,7 +27,6 @@ export default function useTextAnimation() {
 
 			const animateText = (selector: string, staggerAmount: number, delayValue: number) => {
 				const elements = document.querySelectorAll<HTMLElement>(selector)
-
 				elements.forEach((element) => {
 					let chars: Element[] | null = null
 
@@ -59,13 +55,10 @@ export default function useTextAnimation() {
 					}
 				})
 			}
-
 			animateText(".text-anim", 0.05, 0.5)
 			animateText(".text-anim2", 0.03, 0.1)
 		}
-
 		setupAnimation()
-
 		return () => {
 			ScrollTrigger.getAll().forEach(trigger => trigger.kill())
 		}

@@ -1,39 +1,16 @@
 
+'use client';
 import CounterUp from '@/components/elements/CounterUp'
+import Breadcrumb from '@/components/layout/Breadcrumb'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { useLanguage } from '@/util/i18next';
+
 export default function Index() {
+	const { t } = useLanguage();
 	return (
-		<>
 			<Layout>
-				<>
-					<section className="breadcrumb__area fix" data-background="assets/img/bg/breadcrumb-bg.png">
-						<div className="breadcrumb__bg-shape" />
-						<div className="container">
-							<div className="row align-items-center">
-								<div className="col-xl-6">
-									<div className="breadcrumb__content">
-										<h3 className="title">About Us</h3>
-									</div>
-								</div>
-								<div className="col-xl-6">
-									<div className="breadcrumb-wrap">
-										<nav className="breadcrumb">
-											<span property="itemListElement" typeof="ListItem">
-												<Link href="/">Home</Link>
-											</span>
-											<span className="breadcrumb-separator">/</span>
-											<span property="itemListElement" typeof="ListItem">About Us</span>
-										</nav>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					{/* breadcrumb-area-end */}
-					{/*==============================
-					About Area
-					==============================*/}
+					<Breadcrumb breadcrumbTitle={t('pages.about.breadcrumbTitle')} />
 					<section className="about-area-2 pt-120 pb-120 overflow-hidden">
 						<div className="container">
 							<div className="about-wrap2">
@@ -58,41 +35,39 @@ export default function Index() {
 									</div>
 									<div className="col-xl-6">
 										<div className="section__title">
-											<span className="sub-title text-anim">About Amazing Company</span>
-											<h2 className="title text-anim2">We’re Trusted  Professional
-												Consultancy Company
-											</h2>
+											<span className="sub-title text-anim">{t('pages.about.aboutSubtitle')}</span>
+											<h2 className="title text-anim2">{t('pages.about.aboutTitle')}</h2>
 										</div>
-										<p className="mt-30 mb-40">The business consultancy company stands as a stalwart beacon of guidance and innovation, offering a multifaceted array of services tailored to propel enterprises toward their zenith. At its core, this entity operates as a bastion of strategic insight, employing a cadre of seasoned professionals.</p>
+										<p className="mt-30 mb-40">{t('pages.about.aboutParagraph')}</p>
 										<div className="checklist-wrap">
 											<ul className="list-wrap">
 												<li>
 													<span className="icon">
 														<i className="fas fa-check-circle" />
 													</span>
-													Remain flexible and adaptive to swiftly respond to changing market dynamics and client needs.
+													{t('pages.about.checklist.item1')}
 												</li>
 												<li>
 													<span className="icon">
 														<i className="fas fa-check-circle" />
 													</span>
-													Empower clients through knowledge transfer, skill-building, and fostering a culture of self-sufficiency.
+													{t('pages.about.checklist.item2')}
 												</li>
 												<li>
 													<span className="icon">
 														<i className="fas fa-check-circle" />
 													</span>
-													Facilitate a culture of ongoing learning and refinement to ensure sustained success and growth.
+													{t('pages.about.checklist.item3')}
 												</li>
 											</ul>
 										</div>
-										<div className="cta-link">Call to ask any question <Link href="/tel:52537561523">+525-3756-1523</Link></div>
+										<div className="cta-link">{t('pages.about.ctaText')} <Link href="/tel:52537561523">+525-3756-1523</Link></div>
 										<div className="tg-button-wrap mt-30">
 											<Link href="/appointment" className="btn">
-												<span className="btn-text" data-text="Make An Appointment" />
+												<span className="btn-text" data-text={t('pages.about.buttonAppointment')} />
 											</Link>
 											<Link href="/service" className="btn btn-six">
-												<span className="btn-text" data-text="View Our Services" />
+												<span className="btn-text" data-text={t('pages.about.buttonServices')} />
 											</Link>
 										</div>
 									</div>
@@ -100,41 +75,33 @@ export default function Index() {
 							</div>
 						</div>
 					</section>
-					{/*======== / About Section ========*/}
-					{/*==============================
-					Counter Area
-					==============================*/}
 					<section className="counter-area-1 pb-120 pt-120 pt-xl-0">
 						<div className="container">
 							<div className="row gy-30 justify-content-center">
 								<div className="col-lg-4 col-md-6">
 									<div className="counter-card">
 										<h3 className="counter-card_title"><CounterUp>35</CounterUp></h3>
-										<p className="counter-card_subtitle">Years Of Experience</p>
-										<p className="counter-card_text">Central to the consultancy's modus operandi is a commitment...</p>
+										<p className="counter-card_subtitle">{t('pages.about.counter.experience.subtitle')}</p>
+										<p className="counter-card_text">{t('pages.about.counter.experience.text')}</p>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
 									<div className="counter-card">
 										<h3 className="counter-card_title"><CounterUp>500</CounterUp>+</h3>
-										<p className="counter-card_subtitle">Official Project Completed</p>
-										<p className="counter-card_text">Central to the consultancy's modus operandi is a commitment...</p>
+										<p className="counter-card_subtitle">{t('pages.about.counter.projects.subtitle')}</p>
+										<p className="counter-card_text">{t('pages.about.counter.projects.text')}</p>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
 									<div className="counter-card">
 										<h3 className="counter-card_title"><CounterUp>396</CounterUp>+</h3>
-										<p className="counter-card_subtitle">In-House Team Members</p>
-										<p className="counter-card_text">Central to the consultancy's modus operandi is a commitment...</p>
+										<p className="counter-card_subtitle">{t('pages.about.counter.team.subtitle')}</p>
+										<p className="counter-card_text">{t('pages.about.counter.team.text')}</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</section>
-					{/*======== / Counter Section ========*/}
-					{/*==============================
-						Goal Area
-					==============================*/}
 					<section className="goal-area-1 pb-120 overflow-hidden">
 						<div className="container">
 							<div className="row gx-40 gy-5 justify-content-center align-items-center">
@@ -148,9 +115,8 @@ export default function Index() {
 								</div>
 								<div className="col-xl-6">
 									<div className="section__title mb-50">
-										<span className="sub-title text-anim">OUR Business GOAL</span>
-										<h2 className="title text-anim2">Make Every Stage in The
-											Customer Journey</h2>
+										<span className="sub-title text-anim">{t('pages.about.goal.subtitle')}</span>
+										<h2 className="title text-anim2">{t('pages.about.goal.title')}</h2>
 									</div>
 									<div className="goal-grid-card">
 										<div className="box-icon">
@@ -167,12 +133,12 @@ export default function Index() {
 											</svg>
 										</div>
 										<div className="card-details">
-											<h4 className="box-title">Strategy Development</h4>
-											<p className="box-text">Efficiently unleash cross-media information without cross-media value work.</p>
+											<h4 className="box-title">{t('pages.about.goal.card1.title')}</h4>
+											<p className="box-text">{t('pages.about.goal.card1.text')}</p>
 										</div>
 									</div>
 									<div className="goal-grid-card">
-										<div className="box-icon">
+										<div className="box-icon" >
 											<svg width={51} height={50} viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M50.4683 21.216L41.9867 10.1982C41.6727 9.79068 41.1001 9.69016 40.666 9.9662L35.1899 13.4488H28.048C27.9556 13.4488 27.8635 13.4686 27.7746 13.4945L22.2371 15.0885L16.4912 13.5169L10.9081 9.9662C10.4812 9.6948 9.9191 9.78681 9.60169 10.1804L0.220429 21.8005C-0.116701 22.2181 -0.0610282 22.8278 0.345693 23.1777L5.26269 27.4092L9.67399 33.3538C8.38385 34.7282 8.40898 36.896 9.75131 38.2387C10.3463 38.8333 11.1029 39.1693 11.8812 39.2474C11.8541 39.4237 11.8402 39.6027 11.8402 39.7844C11.8402 40.7224 12.2056 41.6042 12.8686 42.2673C13.532 42.9307 14.4139 43.2961 15.3518 43.2961C15.3646 43.2961 15.377 43.2953 15.3893 43.2949C15.389 43.3189 15.3878 43.3425 15.3878 43.3664C15.3878 44.3044 15.7532 45.1862 16.4162 45.8497C17.0796 46.5127 17.9615 46.8781 18.8994 46.8781C19.0846 46.8781 19.2679 46.863 19.4477 46.8352C19.5238 47.6161 19.8606 48.3762 20.4575 48.9731C21.1418 49.6578 22.0411 50 22.9404 50C23.8396 50 24.7389 49.6578 25.4236 48.9731L25.9606 48.4361L26.186 48.6178C26.8649 49.2755 27.7464 49.6041 28.6279 49.6041C29.5272 49.6041 30.4264 49.262 31.1107 48.5773C31.8094 47.8786 32.1515 46.9566 32.1372 46.0391C33.0543 46.053 33.9767 45.7113 34.6753 45.013C35.3732 44.3148 35.7153 43.3935 35.7018 42.4764C36.6571 42.4915 37.5634 42.1246 38.2396 41.4484C38.9382 40.7498 39.2803 39.8277 39.266 38.9103C40.1839 38.9242 41.1056 38.5824 41.8042 37.8838C42.9965 36.6915 43.15 34.8485 42.2658 33.488L45.4867 26.7423L50.3291 22.5753C50.7292 22.2309 50.7903 21.6339 50.4683 21.216ZM10.5903 12.1193L14.6049 14.6721L5.87161 25.3118L2.37195 22.2997L10.5903 12.1193ZM11.1567 34.6776L12.3683 33.4659C12.405 33.4292 12.4437 33.3944 12.4831 33.3619C12.7201 33.1686 13.007 33.0534 13.3109 33.026C13.3194 33.0252 13.3283 33.0252 13.3368 33.0248C13.3801 33.0213 13.4234 33.019 13.4671 33.0194C13.8823 33.0252 14.2682 33.1949 14.5543 33.4969C15.1156 34.0903 15.0855 35.06 14.487 35.6584L13.3121 36.8334C12.7178 37.4276 11.7509 37.4276 11.1567 36.8334C10.5624 36.2388 10.5624 35.2718 11.1567 34.6776ZM14.274 40.8619C13.9859 40.5743 13.8274 40.1915 13.8274 39.7844C13.8274 39.3773 13.9859 38.9946 14.274 38.7065L16.6234 36.3571C17.0735 35.907 17.781 35.7837 18.3562 36.0578C18.9493 36.3404 19.283 36.9842 19.196 37.6317C19.1496 37.9774 18.9888 38.3029 18.7421 38.55L16.4297 40.8619C16.1417 41.15 15.759 41.3085 15.3518 41.3085C14.9447 41.3085 14.562 41.15 14.274 40.8619ZM17.8216 44.4439C17.5335 44.1563 17.375 43.7735 17.375 43.3664C17.375 42.9593 17.5335 42.5766 17.8216 42.2885L20.1706 39.9391C20.652 39.4581 21.424 39.3545 22.0133 39.6974C22.5514 40.0106 22.8333 40.6253 22.7409 41.2377C22.6902 41.5745 22.5302 41.8911 22.2893 42.132L19.9773 44.4439C19.6893 44.732 19.3065 44.8905 18.8994 44.8905C18.4923 44.8905 18.1096 44.732 17.8216 44.4439ZM21.8625 47.5678C21.2682 46.9736 21.2682 46.0066 21.8625 45.4124L23.0741 44.2007C23.1109 44.164 23.1491 44.1296 23.1886 44.0971C23.1897 44.0964 23.1905 44.0956 23.1913 44.0948C23.3885 43.9348 23.62 43.8277 23.8671 43.7809C23.8729 43.7801 23.8787 43.7793 23.8845 43.7786C23.927 43.7708 23.9703 43.7646 24.0136 43.7608C24.031 43.7592 24.0484 43.7592 24.0662 43.7581C24.1018 43.7561 24.1369 43.7538 24.1729 43.7542C24.5877 43.76 24.974 43.9293 25.2601 44.2317C25.2952 44.2688 25.3281 44.3075 25.3583 44.3473C25.8152 44.9446 25.7538 45.8319 25.1866 46.3994L24.0179 47.5682C23.4236 48.1624 22.4567 48.162 21.8625 47.5678ZM40.3988 36.4785C39.8046 37.0731 38.8377 37.0727 38.2434 36.4785C38.2218 36.4568 38.199 36.4367 38.1758 36.4178L31.7865 29.9613C31.4003 29.5712 30.7713 29.5681 30.3812 29.9543C29.9911 30.3401 29.988 30.9692 30.3738 31.3593L36.8323 37.885C36.8331 37.8857 36.8338 37.8865 36.8346 37.8873C37.4288 38.4815 37.4288 39.4488 36.8346 40.0431C36.5466 40.3311 36.1638 40.4896 35.7567 40.4896C35.3492 40.4896 34.9665 40.3311 34.6788 40.0431L30.3584 35.6778C29.9725 35.2877 29.3435 35.2846 28.9534 35.6704C28.5633 36.0567 28.5602 36.6857 28.9461 37.0758L33.2004 41.3742C33.2221 41.4013 33.2453 41.4272 33.27 41.4519C33.8642 42.0461 33.8642 43.0134 33.27 43.6077C32.6754 44.2019 31.7081 44.2015 31.1138 43.6073L28.7559 41.2246C28.3696 40.8345 27.7406 40.831 27.3505 41.2172C26.9604 41.6031 26.9573 42.2321 27.3432 42.6222L29.6354 44.938C29.6571 44.9651 29.6803 44.9914 29.7054 45.0161C30.2996 45.6104 30.2996 46.5777 29.7054 47.1719C29.1112 47.7665 28.1442 47.7661 27.55 47.1719C27.4816 47.1035 27.4011 47.0509 27.3246 46.9921C27.2596 46.9426 27.2426 46.9082 27.2751 46.8294C27.308 46.7493 27.3571 46.677 27.3899 46.5966C27.4263 46.5069 27.4557 46.4145 27.4843 46.3217C27.6366 45.8307 27.6814 45.3026 27.613 44.793C27.4816 43.8153 26.9438 42.933 26.1288 42.3748C25.6884 42.0736 25.1789 41.876 24.6508 41.8018C24.9067 40.6729 24.5993 39.4488 23.7998 38.6041C23.1418 37.9089 22.253 37.5188 21.2969 37.5057C21.2621 37.5053 21.2273 37.5053 21.1921 37.5057C21.2133 36.5933 20.8816 35.6867 20.2526 35.0221C19.5942 34.3269 18.7054 33.9368 17.7496 33.9237C17.4655 33.9198 17.1786 33.95 16.9018 34.0138C16.7835 33.1907 16.3686 32.429 15.7404 31.8843C15.116 31.3438 14.3308 31.0438 13.4945 31.0322C12.6142 31.0194 11.7493 31.3442 11.0956 31.9345L7.25454 26.7589L16.4437 15.564L19.3723 16.3651L15.5475 23.1143C15.0851 23.9304 14.9683 24.8776 15.2185 25.7815C15.4686 26.6858 16.0555 27.4382 16.8716 27.9006C16.9227 27.9296 16.9741 27.957 17.0263 27.9833C17.0301 27.9853 17.034 27.9872 17.0383 27.9891C17.1755 28.0576 17.3166 28.1163 17.4597 28.1658C18.1258 28.3966 18.8453 28.4217 19.5393 28.23C20.4432 27.9798 21.1956 27.3926 21.658 26.5768L24.1435 22.1906L28.5815 22.5054L40.3992 34.3227C40.9931 34.9173 40.9931 35.8842 40.3988 36.4785ZM40.8106 31.9237L29.7243 20.8379C29.7035 20.8166 29.6814 20.7965 29.6586 20.7776C29.4989 20.6446 29.301 20.5641 29.0922 20.5495L23.6583 20.164C23.2825 20.1381 22.909 20.338 22.7235 20.6654L19.929 25.5971C19.7283 25.9513 19.4017 26.206 19.0092 26.3147C18.6172 26.4233 18.2059 26.3723 17.8513 26.1716C17.4972 25.971 17.2424 25.6443 17.1338 25.2519C17.0251 24.8595 17.0758 24.4481 17.2768 24.094L21.0073 17.5103L22.519 17.0753C22.529 17.0722 22.5387 17.0684 22.5487 17.0653L28.1906 15.4361H35.0075L43.5177 26.2544L40.8106 31.9237ZM44.8194 24.6948L36.9494 14.6849L40.966 12.1305L48.3198 21.6826L44.8194 24.6948Z" fill="currentColor" />
 												<path d="M30.7001 11.583C30.9545 11.583 31.2089 11.486 31.403 11.2919L38.1905 4.50447C38.5786 4.1163 38.5786 3.48728 38.1905 3.09911C37.8023 2.71095 37.1733 2.71095 36.7851 3.09911L29.9977 9.88656C29.6095 10.2747 29.6095 10.9037 29.9977 11.2919C30.1917 11.486 30.4461 11.583 30.7001 11.583Z" fill="currentColor" />
@@ -182,66 +148,61 @@ export default function Index() {
 											</svg>
 										</div>
 										<div className="card-details">
-											<h4 className="box-title">Data-Driven Insights</h4>
-											<p className="box-text">Efficiently unleash cross-media information without cross-media value work.</p>
+											<h4 className="box-title">{t('pages.about.goal.card2.title')}</h4>
+											<p className="box-text">{t('pages.about.goal.card2.text')}</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</section>
-					{/*==============================
-					Faqs Area
-					==============================*/}
-					{/*======== / Goal Section ========*/}
 					<section className="faq-area-1 overflow-hidden pb-120 position-relative z-1">
 						<div className="faq-bg-shape1-1" />
 						<div className="container">
 							<div className="row gy-5 gx-80 justify-content-between align-items-center">
 								<div className="col-xl-6">
 									<div className="section__title mb-50">
-										<span className="sub-title text-anim">frequently asked questions</span>
-										<h2 className="title text-anim2">Get every business answer
-											from us</h2>
+										<span className="sub-title text-anim">{t('pages.about.faq.subtitle')}</span>
+										<h2 className="title text-anim2">{t('pages.about.faq.title')}</h2>
 									</div>
 									<div className="accordion-area accordion" id="faqAccordion">
 										<div className="accordion-card active">
 											<div className="accordion-header" id="collapse-item-1">
-												<button className="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1"><span className="text-theme">01.</span> What should i included my personal details? </button>
+												<button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1"><span className="text-theme">01.</span> {t('pages.about.faq.question1.title')}</button>
 											</div>
 											<div id="collapse-1" className="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
 												<div className="accordion-body">
-													<p className="faq-text">Partrient sed nascetur facilisis suscipit ridiculus magna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service visionary sources unleash online</p>
+													<p className="faq-text">{t('pages.about.faq.question1.answer')}</p>
 												</div>
 											</div>
 										</div>
 										<div className="accordion-card">
 											<div className="accordion-header" id="collapse-item-2">
-												<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2"><span className="text-theme">02.</span>Where i can find my business growth result?</button>
+												<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2"><span className="text-theme">02.</span>{t('pages.about.faq.question2.title')}</button>
 											</div>
-											<div id="collapse-2" className="accordion-collapse collapse " aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
+											<div id="collapse-2" className="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
 												<div className="accordion-body">
-													<p className="faq-text">Partrient sed nascetur facilisis suscipit ridiculus magna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service visionary sources unleash online</p>
+													<p className="faq-text">{t('pages.about.faq.question2.answer')}</p>
 												</div>
 											</div>
 										</div>
 										<div className="accordion-card">
 											<div className="accordion-header" id="collapse-item-3">
-												<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3"><span className="text-theme">03.</span>Did you get any business consultant?</button>
+												<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3"><span className="text-theme">03.</span>{t('pages.about.faq.question3.title')}</button>
 											</div>
-											<div id="collapse-3" className="accordion-collapse collapse " aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
+											<div id="collapse-3" className="accordion-collapse collapse" aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
 												<div className="accordion-body">
-													<p className="faq-text">Partrient sed nascetur facilisis suscipit ridiculus magna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service visionary sources unleash online</p>
+													<p className="faq-text">{t('pages.about.faq.question3.answer')}</p>
 												</div>
 											</div>
 										</div>
 										<div className="accordion-card">
 											<div className="accordion-header" id="collapse-item-4">
-												<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4"><span className="text-theme">04.</span>Do you need any business invesment policy?</button>
+												<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4"><span className="text-theme">04.</span>{t('pages.about.faq.question4.title')}</button>
 											</div>
-											<div id="collapse-4" className="accordion-collapse collapse " aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
+											<div id="collapse-4" className="accordion-collapse collapse" aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
 												<div className="accordion-body">
-													<p className="faq-text">Partrient sed nascetur facilisis suscipit ridiculus magna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service visionary sources unleash online</p>
+													<p className="faq-text">{t('pages.about.faq.question4.answer')}</p>
 												</div>
 											</div>
 										</div>
@@ -255,9 +216,6 @@ export default function Index() {
 							</div>
 						</div>
 					</section>
-					{/*======== / Goal Section ========*/}
-				</>
 			</Layout>
-		</>
 	)
 }

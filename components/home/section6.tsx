@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import Link from 'next/link'
+import { useLanguage } from '@/util/i18next';
 
 const swiperOptions = {
 	modules: [Autoplay, Pagination, Navigation],
@@ -17,10 +18,8 @@ const swiperOptions = {
 	},
 };
 
-
-
-export default function Section5() {
-	// Define clients data array
+export default function Index() {
+	const { t } = useLanguage();
 	const clients = [
 		{ image: "/assets/img/client/client1-1.svg" },
 		{ image: "/assets/img/client/client1-2.svg" },
@@ -35,35 +34,29 @@ export default function Section5() {
 	]
 
 	return (
-		<>
-			<section className="client-area-2 pt-60 pb-60 overflow-hidden position-relative">
-				<div className="container">
-					<div className="row justify-content-center">
-						<div className="col-lg-7">
-							<div className="section__title text-center mb-30">
-								<span className="sub-title text-body text-anim fw-normal lh-normal lh-base">
-									Used by thousands of companies around the world
-								</span>
-							</div>
+		<section className="client-area-2 pt-60 pb-60 overflow-hidden position-relative">
+			<div className="container">
+				<div className="row justify-content-center">
+					<div className="col-lg-7">
+						<div className="section__title text-center mb-30">
+							<span className="sub-title text-body text-anim fw-normal lh-normal lh-base">
+								{t('home.section6.subtitle')}
+							</span>
 						</div>
 					</div>
-					<Swiper {...swiperOptions}
-						className="tg-swiper__slider swiper-container client-slider2 has-shadow"
-						id="clientSlider2"
-						data-swiper-options='{}'
-					>
-						<div className="swiper-wrapper">
-							{clients.map((client, index) => (
-								<SwiperSlide key={index}>
-									<Link href="#" className="client-card">
-										<img src={client.image} alt="img" />
-									</Link>
-								</SwiperSlide>
-							))}
-						</div>
-					</Swiper>
 				</div>
-			</section>
-		</>
-	)
+				<Swiper {...swiperOptions} className="tg-swiper__slider swiper-container client-slider2 has-shadow" id="clientSlider2" data-swiper-options="{}">
+					<div className="swiper-wrapper">
+						{clients.map((client, index) => (
+							<SwiperSlide key={index}>
+								<Link href="#" className="client-card">
+									<img src={client.image} alt="img" />
+								</Link>
+							</SwiperSlide>
+						))}
+					</div>
+				</Swiper>
+			</div>
+		</section>
+	);
 }

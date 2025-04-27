@@ -1,11 +1,12 @@
 
-import Link from "next/link"
+'use client';
+import Link from 'next/link'
+import { useLanguage } from '@/util/i18next';
+
 export default function Error() {
+  const { t } = useLanguage();
 	return (
 		<main>
-			{/*==============================
-			Error Area
-			==============================*/}
 			<section className="error-area pt-20">
 				<div className="container">
 					<div className="row">
@@ -15,10 +16,10 @@ export default function Error() {
 									<img src="/assets/img/others/error.svg" alt="img" />
 								</div>
 								<div className="section__title">
-									<h2 className="title">Oops! Nothing Was Found</h2>
+									<h2 className="title">{t('error.not-found.description')}</h2>
 									<div className="tg-button-wrap justify-content-center mt-40">
 										<Link href="/" className="btn">
-											<span className="btn-text" data-text="Back To Homepage" />
+											<span className="btn-text" data-text={t('error.not-found.button')} />
 										</Link>
 									</div>
 								</div>

@@ -34,8 +34,8 @@ export default function Layout({ breadcrumbTitle, children }: LayoutProps) {
 
 	useEffect(() => {
 		const WOW = require('wowjs')
-		;(window as any).wow = new WOW.WOW({ live: false })
-		;(window as any).wow.init()
+			; (window as any).wow = new WOW.WOW({ live: false })
+			; (window as any).wow.init()
 
 		AOS.init()
 
@@ -50,7 +50,6 @@ export default function Layout({ breadcrumbTitle, children }: LayoutProps) {
 		return () => document.removeEventListener('scroll', handleScroll)
 	}, [scroll])
 
-	// Inicializar utilidades
 	dataBg()
 	AnimatedText()
 	useMobileMenu()
@@ -61,15 +60,12 @@ export default function Layout({ breadcrumbTitle, children }: LayoutProps) {
 		<>
 			<div id="top" />
 			<BootstrapComponents />
-
 			<Header scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} />
 			<MobileMenu isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} />
-
 			<main className="fix">
 				{breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
 				{children}
 			</main>
-
 			<Footer />
 			<BackToTop target="#top" />
 		</>

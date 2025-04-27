@@ -1,6 +1,9 @@
+'use client';
 import Link from 'next/link'
+import { useLanguage } from '@/util/i18next';
 
 export default function Breadcrumb({ breadcrumbTitle }: any) {
+	const { t } = useLanguage();
 	return (
 		<>
 			<section className="breadcrumb__area fix" data-background="assets/img/bg/breadcrumb-bg.png">
@@ -16,7 +19,7 @@ export default function Breadcrumb({ breadcrumbTitle }: any) {
 							<div className="breadcrumb-wrap">
 								<nav className="breadcrumb">
 									<span property="itemListElement" typeof="ListItem">
-										<Link href="//">Home</Link>
+										<Link href="//">{t('bread.title')}</Link>
 									</span>
 									<span className="breadcrumb-separator">/</span>
 									<span property="itemListElement" typeof="ListItem">{breadcrumbTitle}</span>
