@@ -49,33 +49,30 @@
 }
 
 :root {
-  --tg-body-font-family: 'Inter', sans-serif;
-  ;
-  --tg-heading-font-family: 'Exo', serif;
-  ;
-  --tg-icon-font-family: "Font Awesome 5 Free";
-  --tg-body-font-size: 16px;
-  --tg-body-line-height: 1.75;
-  --tg-heading-line-height: 1.2;
-  --tg-body-color: #74787C;
-  --tg-heading-color: #1D3131;
-  --tg-theme-primary: #128982;
-  --tg-color-dark-theme: #51AEA9;
+  /* 🎨 Colores primarios */
+  --tg-theme-primary: #1671E0;
+  --tg-color-dark-theme: #0A2F6B;
+
+  /* 🖤 Blanco / Negro / Oscuros */
   --tg-color-white-default: #ffffff;
-  --tg-color-red-default: #ED1730;
-  --tg-color-yellow-default: #FCE300;
-  --tg-color-gray-1: #1C2F35;
-  --tg-color-gray-2: #2C383D;
-  --tg-color-gray-3: #0D161A;
-  --tg-color-gray-4: #F7F4F7;
-  --tg-color-gray-5: #263B42;
-  --tg-color-gray-6: #1F363E;
-  --tg-color-gray-7: #18282D;
-  --tg-color-gray-8: #172727;
   --tg-color-dark: #000000;
   --tg-color-black-1: #161F23;
   --tg-color-black-2: #0B0F13;
   --tg-color-black-3: #151D22;
+
+  /* 🔴 Rojos / Amarillos */
+  --tg-color-red-default: #ED1730;
+  --tg-color-yellow-default: #FCE300;
+
+  /* 🌫️ Grises y humos */
+  --tg-color-gray-1: #0A2F6B;
+  --tg-color-gray-2: #0A2F6B;
+  --tg-color-gray-3: #0A2F6B;
+  --tg-color-gray-4: #F7F4F7;
+  --tg-color-gray-5: #0A2F6B;
+  --tg-color-gray-6: #0A2F6B;
+  --tg-color-gray-7: #0A2F6B;
+  --tg-color-gray-8: #0A2F6B;
   --tg-color-smoke: #F5F6F7;
   --tg-color-smoke-2: #E4F2F6;
   --tg-color-smoke-3: #F6F6F7;
@@ -83,21 +80,35 @@
   --tg-color-smoke-5: #F6F6F6;
   --tg-color-smoke-6: #708288;
   --tg-color-smoke-7: #F0F3F9;
+
+  /* 📏 Bordes */
   --tg-border-1: #EAEAEA;
   --tg-border-2: #E8E8E8;
   --tg-border-3: #EBF2F6;
   --tg-border-4: #DBE3EB;
   --tg-border-5: #F8F8F8;
   --tg-border-6: #E6E6E6;
-  --tg-border-7: #37464D;
-  --tg-border-8: #55656C;
-  --tg-border-9: #24383F;
+  --tg-border-7: #1671E0;
+  --tg-border-8: #1671E0;
+  --tg-border-9: #1671E0;
+
+  /* 🔠 Tipografía */
+  --tg-body-font-family: 'Inter', sans-serif;
+  --tg-heading-font-family: 'Exo', serif;
+  --tg-icon-font-family: "Font Awesome 5 Free";
+  --tg-body-font-size: 16px;
   --tg-fw-extra-bold: 800;
   --tg-fw-bold: 700;
   --tg-fw-semi-bold: 600;
   --tg-fw-medium: 500;
   --tg-fw-regular: 400;
   --tg-fw-light: 300;
+
+  /* 🌀 Otros */
+  --tg-body-line-height: 1.75;
+  --tg-heading-line-height: 1.2;
+  --tg-body-color: #000000;
+  --tg-heading-color: #1e1f1f;
 }
 
 /*=============================
@@ -1146,8 +1157,9 @@ textarea {
 }
 
 .black1-bg {
-  background: var(--tg-color-black-1);
+  background-color: #0A2F6B !important; 
 }
+
 
 .black2-bg {
   background: var(--tg-color-black-2);
@@ -4654,13 +4666,13 @@ textarea.is-invalid {
 }
 
 .hero-thumb3 .img1 {
-  border: 13px solid #132222;
+  border: 13px solid #3a56f0;
   border-radius: 500px;
   overflow: hidden;
 }
 
 .hero-thumb3 .img2 {
-  border: 13px solid #132222;
+  border: 13px solid #3b79ec;
   border-radius: 500px;
   overflow: hidden;
   margin-top: 77px;
@@ -13104,7 +13116,7 @@ blockquote .blockquote-card_title:before {
 .footer__area-two .footer__bottom {
   background: var(--tg-color-white-default);
   border-radius: 15px 15px 0 0;
-  box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 4px 37px rgb(218, 5, 5);
 }
 
 .footer__area-two .footer__logo-wrap {

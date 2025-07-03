@@ -2,43 +2,43 @@
   "home": {
     "section1": {
       "title": {
-        "span": "Una Experiencia",
-        "rest": "De Aprendizaje Exclusiva Para Negocios"
+        "span": "Descubre cómo la innovación",
+        "rest": "Tecnológica puede llevar tu empresa más lejos."
       },
-      "subtitle": "Descubre beneficios flexibles que se adaptan a tu vida en casa y te llevan por todo el mundo. Aplican términos del plan.",
+      "subtitle": "Lleva tus ideas al siguiente nivel con asesoría experta, consultoría estratégica y desarrollo de software que realmente impulsa resultados.",
       "cta": "Solicitar una Cita"
     },
     "section2": {
-      "subtitle": "Características Únicas",
-      "title": "Tres Facilidades Exclusivas",
+      "subtitle": "Nuestros",
+      "title": "Servicios",
       "cards": {
         "1": {
-          "title": "Soluciones Basadas en Datos",
-          "text": "Sociis enim porta suspendisse rhoncus etiam luctus dapibus hendrerit"
+          "title": "Asesoría",
+          "text": "Detectamos y solucionamos errores en el funcionamiento o desarrollo de tu software actual."
         },
         "2": {
-          "title": "Gran Crecimiento Empresarial",
-          "text": "Sociis enim porta suspendisse rhoncus etiam luctus dapibus hendrerit"
+          "title": "Consultoría",
+          "text": "Ofrecemos el servicio y acompañamiento en la gestión de herramientas digitales o plataformas personalizadas"
         },
         "3": {
-          "title": "Alianza Colaborativa",
-          "text": "Sociis enim porta suspendisse rhoncus etiam luctus dapibus hendrerit"
+          "title": "Desarrollo de software",
+          "text": "Creamos software desde cero, totalmente adaptado a tus necesidades"
         },
         "cta": "Ver Más"
       }
     },
     "section3": {
       "subtitle": "Sobre Nuestra Empresa",
-      "title": "Inspirando el Éxito con Soluciones Innovadoras",
+      "title": "No solo desarrollamos software, construimos soluciones que hacen crecer a las empresas.",
       "description": "Netus senectus neque primis cum fermentum hac dictum luctus leo faucibus bibendum sem conubia sodales vitae eros orci, platea porttitor scelerisque nec dis mollis venenatis quam.",
       "features": {
         "0": {
           "title": "Calidad y Excelencia",
-          "text": "Envíos regulares de 30 días"
+          "text": ""
         },
         "1": {
           "title": "Innovación y Crecimiento",
-          "text": "Envíos rápidos en 24 horas"
+          "text": ""
         }
       },
       "cta": "Solicita una Consulta",
@@ -46,18 +46,18 @@
       "phone": "+236-3256.21456"
     },
     "section4": {
-      "subtitle": "Sobre Nuestra Empresa",
-      "title": "Brindamos Apoyo Logístico 100% Confiable",
+      "subtitle": "",
+      "title": "",
       "description": "Los servicios de consultoría empresarial se enfocan en identificar desafíos dentro de una organización y ofrecer soluciones a medida. Esto incluye áreas como posicionamiento en el mercado, planificación financiera y eficiencia operativa...",
-      "successLabel": "Historias de Éxito",
+      "successLabel": "Confiable",
       "features": {
         "0": {
-          "title": "Servicio Global Empresarial",
-          "text": "Los servicios de consultoría empresarial se enfocan en identificar desafíos dentro de una organización y ofrecer soluciones a medida."
+          "title": "Misión",
+          "text": "Brindar soluciones tecnológicas innovadoras que fortalezcan la estrategia de negocio de nuestros clientes, combinando consultoría, asesoría y desarrollo de software con altos estándares de calidad y eficiencia."
         },
         "1": {
-          "title": "Servicio Global Empresarial",
-          "text": "Los servicios de consultoría empresarial se enfocan en identificar desafíos dentro de una organización y ofrecer soluciones a medida."
+          "title": "Visión",
+          "text": "Ser una empresa referente en transformación digital en América Latina, reconocida por su capacidad de generar valor a través de la tecnología y la innovación constante."
         }
       }
     },

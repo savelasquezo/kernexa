@@ -9,7 +9,7 @@ export default function Footer() {
 		<footer>
 			<div className="footer__area footer__area-one black1-bg">
 				<div className="footer__bg-shape1-1">
-					<img src="/assets/img/bg/footer-bg-shape1-1.png" alt="img" />
+					<img src="/assets/img/bg/footer_bg.png" alt="img" />
 				</div>
 				<div className="container">
 					<div className="footer__top fix">
@@ -33,7 +33,7 @@ export default function Footer() {
 							<div className="col-xl-3 col-lg-4 col-md-6">
 								<div className="footer__widget footer__about">
 									<div className="footer__logo">
-										<Link href="/"><img src="/assets/img/logo/logo-white.svg" alt="logo" /></Link>
+										<Link href="/"><img src="/assets/img/logo/logo.png" alt="logo" /></Link>
 									</div>
 									<p className="footer__content mb-35">
 										{t('footer.aboutText')}
@@ -113,7 +113,7 @@ export default function Footer() {
 				<div className="footer__bottom text-center">
 					<div className="container">
 						<div className="footer__copyright">
-							<Link href="#">Valom</Link> - {t('footer.rights')}
+							<Link href="#">Kernexa</Link> - {t('footer.rights')}
 						</div>
 					</div>
 				</div>

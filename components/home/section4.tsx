@@ -23,17 +23,13 @@ export default function Index() {
 									<div className="box-icon">
 										<img src="/assets/img/icon/feature-counter-icon2-1.svg" alt="img" />
 									</div>
-									<h3 className="box-counter"><CounterUp>96</CounterUp>%</h3>
+									<h3 className="box-counter"><CounterUp>100</CounterUp>%</h3>
 									<p className="box-text">{t('home.section4.successLabel')}</p>
 								</div>
 							</div>
 						</div>
 						<div className="col-xl-6">
-							<div className="section__title">
-								<span className="sub-title text-anim">{t('home.section4.subtitle')}</span>
-								<h2 className="title text-anim2">{t('home.section4.title')}</h2>
-							</div>
-							<p className="mt-30 mb-40">{t('home.section4.description')}</p>
+
 							<div className="about-grid-wrap style3">
 								<div className="about-grid-card style3">
 									<div className="box-icon">

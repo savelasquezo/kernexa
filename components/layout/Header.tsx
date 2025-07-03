@@ -15,7 +15,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu }: any) 
 						<div className="row">
 							<div className="col-xl-6 col-md-8">
 								<ul className="tg-header__top-info left-side list-wrap">
-									<li><i className="far fa-envelope" /><Link href="#">info@valom.com</Link></li>
+									<li><i className="far fa-envelope" /><Link href="#">info@Kernexa.com</Link></li>
 									<li><i className="far fa-clock" />{t('header.workingHours')}: 6:00am - 9:00pm</li>
 								</ul>
 							</div>
@@ -44,7 +44,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu }: any) 
 								<div className="tgmenu__wrap">
 									<nav className="tgmenu__nav">
 										<div className="logo">
-											<Link href="/"><img src="/assets/img/logo/logo-white.svg" alt="Logo" /></Link>
+											<Link href="/"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
 										</div>
 										<div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
 											<ul className="navigation">

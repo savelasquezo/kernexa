@@ -44,7 +44,7 @@ export default function Index() {
 									</div>
 									<div className="card-details">
 										<h4 className="box-title">{t('home.section3.features.0.title')}</h4>
-										<p className="box-text">{t('home.section3.features.0.text')}</p>
+										<p className="box-text">{t('')}</p>
 									</div>
 								</div>
 								<div className="about-grid-card style2">
@@ -57,7 +57,7 @@ export default function Index() {
 									</div>
 									<div className="card-details">
 										<h4 className="box-title">{t('home.section3.features.1.title')}</h4>
-										<p className="box-text">{t('home.section3.features.1.text')}</p>
+										<p className="box-text">{t('')}</p>
 									</div>
 								</div>
 							</div>
